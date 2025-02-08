@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="cart_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<header>
+
+		<!--search-->
+		<div class="container">
+		  <img src="../img/logo.png" alt="logo" height="100px" width="200px"  class="logo">
+		 
+		  
+			
+			<div class="search-bar">
+				<input type="text" placeholder="Search by Title, Author or ISBN">
+				<button>Search</button>
+			  </div>
+			<div class="user-actions">
+	
+	
+	 
+				
+				
+				<a href="../login/login_page.html" class="user-icon" >
+					<img src="../img/user.png" alt="User Icon" width="24px" height="24px" class="user-img">
+					<img src="../img/user_active.png" alt="User Hover Icon" width="24px" height="24px" class="hover-user-img">
+	
+					<span class="user-text">Login/Signup</span>
+				  </a>
+				
+	
+				  
+				  
+				  
+				 
+			  
+			  <a href="cart.html" class="bag-icon">
+				  <img src="../img/shopping-bag.png" width="24px" height="24px" class="bag-img"></img>
+				  <img src="../img/bag_active.png" alt="User Hover Icon" width="24px" height="24px" class="hover-bag-img">
+				<span class="cart-count">3</span></a>
+			  <a href="#" class="wish-icon">
+				  <img src="../img/wishlist.png" width="24px" height="24px" class="wish-img"></img>
+				  <img src="../img/wishlist_black_active.png" width="24px" height="24px" class="hover-wish-img"></img>
+				  <span class="wishlist-count">0</span></a>
+	
+				 
+		   
+			  <a href="#" class="ham-action"><img src="../img/hamburger.png" width="24px" height="24px"></img></a>
+			</div>
+		   
+	
+		 
+		</div>
+	
+	   
+	
+		<!--Nav-->
+		<nav>
+		  <div id="menu-bar">
+			<ul>
+			  <li><a href="../index.html" class="nav-a">Home</a></li>
+			  <li class="dropdown">
+				<a href="product_list.html" class="nav-a">Fiction <i class="arrow down"></i></a>
+					<ul class="dropdown-content">
+					  <li><a href="product_list.html">Action and Adventure</a></li>
+						<li><a href="product_list.html">Drama</a></li>
+						<li><a href="product_list.html">Crime</a></li>
+						<li><a href="product_list.html">Science Fiction</a></li>
+					</ul>
+			  </li>
+			  <li class="dropdown">
+				<a href="product_list.html" class="nav-a">Non-Fiction <i class="arrow down"></i></a>
+					<ul class="dropdown-content">
+						<li><a href="product_list.html">Art and Photography</a></li>
+						<li><a href="product_list.html">Food and Drink</a></li>
+						<li><a href="product_list.html">Music</a></li>
+						<li><a href="product_list.html">Health and Lifestyle</a></li>
+					</ul>
+			  </li>
+			  <li><a href="../index.html" class="nav-a" id="author-btn">Popular Authors</a></li>
+			  <li><a href="../about_us.html" class="nav-a">About Us</a></li>
+			  <li><a href="../contact_us_page.html" class="nav-a">Contact Us</a></li>
+			</ul></div>
+		  </nav>
+	
+	
+		  
+	  </header>
+	
+
+   <main>
+   
+
+    <div class="hero-wrapper">
+		<h1>My Cart</h1>
+		<div class="project">
+			<div class="shop">
+				<div class="box">
+					<img src="imgs/product_1.jpg">
+					<div class="content">
+						<h3>It Ends with us</h3>
+						<h4>Price: £9.61</h4>
+                        <button class="quantity-btn decrease">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn increase">+</button>
+						<p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
+					</div>
+				</div>
+				<div class="box">
+					<img src="imgs/product_2.jpg">
+					<div class="content">
+						<h3>Fairy Tale: Stephen King</h3>
+						<h4>Price: £18.77</h4>
+						<button class="quantity-btn decrease">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn increase">+</button>
+						<p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
+					</div>
+				</div>
+				<div class="box">
+					<img src="imgs/product_3.jpg">
+					<div class="content">
+						<h3>Where the Crawdads</h3>
+						<h4>Price: £10.14</h4>
+						<button class="quantity-btn decrease">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn increase">+</button>
+						<p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="right-bar">
+				<p><span>Subtotal</span> <span>£38.52</span></p>
+				<hr>
+				<p><span>Tax (5%)</span> <span>£0</span></p>
+				<hr>
+				<p><span>Shipping</span> <span>£5</span></p>
+				<hr>
+				<p><span>Total</span> <span>£43.52</span></p><a href="#"><i class="fa fa-shopping-cart"></i>Checkout</a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+    <section class="delivery-info">
+        <div class="delivery-item">
+          <img src="../img/svg/van.svg" alt="Free UK Delivery Icon">
+          <p>FREE UK delivery for all orders over £20 Worldwide shipping from £2.99</p>
+        </div>
+        <div class="delivery-item">
+          <img src="../img/svg/open_book.svg" alt="Worldwide Shipping Icon"> 
+          <p>Over 3 million books available and ready to ship!</p>
+        </div>
+        <div class="delivery-item">
+          <img src="../img/svg/star_review.svg" alt="Returns Icon"> 
+          <p>Excellent customer service & over 2 million satisfied customers</p>
+        </div>
+      </section>
+      
+
+
+   </main>
+
+
+
+   <script>
+
+	   // JavaScript to toggle the menu
+document.querySelector('.ham-action').addEventListener('click', function() {
+  var nav = document.querySelector('nav');
+if (nav.style.display === 'block') {
+nav.style.display = 'none';
+} else {
+nav.style.display = 'block';
+}
+});
+
+
+function updateNavDisplay() {
+var nav = document.querySelector('nav');
+if (window.innerWidth > 768) {
+nav.style.display = 'block';
+} else {
+nav.style.display = 'none';
+}
+}
+
+// this function will check the screen size when size resized after click on hamburger icon
+updateNavDisplay();
+window.addEventListener('resize', updateNavDisplay);
+   </script>
+
+
+      
+  
+    <script src="product_script.js"></script>
+
+	 <!--footer-->
+
+	 <footer class="footer">
+		<span class="footer-links">
+		  <a href="../about_us.html">About Us</a>
+		  <a href="../contact_us_page.html">Contact Us</a>
+		  <a href="#">Privacy Policy</a>
+		</span>
+		<span class="footer-links">
+		  <a href="#"><i class="fa fa-facebook-f"></i></a>
+		  <a href="#"><i class="fa fa-twitter"></i></a>
+		  <a href="#"><i class="fa fa-instagram"></i></a>
+		</span>
+		<span class="copyright">&copy; 2024 All Rights Reserved</span>
+	  </footer>
+</body>
+</html>

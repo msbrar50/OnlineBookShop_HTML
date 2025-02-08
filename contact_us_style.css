@@ -1,0 +1,382 @@
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.head-section{
+    height: 15vh;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    background-color: #7C77B7;
+    color:rgb(74, 21, 105);
+    transition: background-color 0.5s ease-in-out;
+  }
+   
+
+  .head-section h2 {
+    font-size: 2em; /* Adjust font size */
+    text-align: center;
+    text-shadow: 0 0 5px rgba(170, 35, 35, 0.3), 2px 2px 10px rgba(0, 0, 0, 0.1);
+    animation: shadowPulse 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes shadowPulse {
+    from { text-shadow: 0 0 5px rgba(0, 0, 0, 0.3), 2px 2px 10px rgba(0, 0, 0, 0.1); }
+    to { text-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 4px 4px 15px rgba(0, 0, 0, 0.2); }
+  }
+
+
+
+  
+
+
+  /************ Typewriter effect *************/
+  
+.typewriter h1 {
+  color: #fff;
+ width: 30%;
+  font-family: monospace;
+  overflow: hidden; 
+  border-right: .15em solid orange;  
+  white-space: nowrap;  
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+.section-p1{
+    padding: 40px 80px;
+  }
+
+
+  /*** student details **/
+  .student-id-card {
+    width: 400px;  
+    height: 200px;  
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
+    transition: all 0.2s ease-in-out; /* Transition for hover animation */
+    cursor: default; /* Remove pointer cursor */
+  }
+  
+  .student-id-card:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: scale(1.02);  
+  }
+  
+  .get-in-touch {
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  .student-id-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .student-id-card h3, p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+   
+  
+  .student-id-card:hover  {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.8; 
+    
+    transition: all 0.2s ease-in-out;
+  }
+
+  .map {
+    border: 5px solid #ccc; /* Adjust border width and color */
+    padding: 10px;  
+  }
+
+  
+  
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #contact-details .details{
+    width: 40%;
+  }
+  #contact-details .details span,
+  #form-details form span{
+    font-size: 12px;
+  }
+  #contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  #contact-details .details h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0px;
+  }
+  #contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+  }
+  #contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+  }
+  #contact-details .details li p{
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  #form-details .map{
+    width: 45%;
+    height: 400px;
+  }
+  #form-details .map iframe{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #form-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  
+  #form-details form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #form-details form input,
+  #form-details form textarea{
+    width: 80%;
+    padding: 12px 14px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+  }
+  #form-details form button{
+    background-color: #088178;
+    color: #fff;
+  }
+
+  button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+  }
+
+
+  span.leave-a-message {
+    
+    display: inline-block; 
+   
+    background-color: #f0f0f0;  
+    border-radius: 5px; /* This adds rounded corners */
+    cursor: default;  
+    font-size: 1.5em;  
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+
+  
+  /* Newsletter start */
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+  }
+  
+  #newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  #newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+  }
+  
+  #newsletter p span{
+    color: #ffbd27;
+  }
+  
+  #newsletter .form{
+    display: flex;
+    width: 40%;
+  }
+  
+  #newsletter input{
+    height: 3.142rem;
+    padding: 0px 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  #newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  /* Newsletter end */
+   
+
+
+
+  @media (max-width:768px) {
+
+    .section-p1{
+        padding: 40px 40px;
+    }
+
+    .head-section h1{
+        font-size: 1rem;
+    }
+
+    .typewriter h1 {
+    width: 100%;
+    }
+
+    /* contact page */
+  #form-details{
+    padding: 40px;
+  }
+  #form-details form{
+    width: 50%;
+  }
+  
+
+  #contact-details{
+    flex-direction: column;
+  }
+  #contact-details .details{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #form-details .map{
+    width: 100%;
+  }
+
+  #form-details{
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+  #form-details form{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+
+
+   
+  #newsletter .form{
+    width: 70%;
+  }
+
+  .form {
+    flex: 1; /* Make form area flexible */
+    display: flex; /* Make form elements stack vertically */
+    flex-direction: column;
+    align-items: center;
+
+    margin: 10px 10px;
+}
+
+#newsletter input{
+    margin-bottom: 10px;
+
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+#newsletter button{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+}
+
+
+
+
+
+ 
+
+}
+
+@media (max-width:477px) {
+    .section-p1{
+      padding: 20px;
+    }
+
+    #newsletter{
+        padding: 40px 20px;
+      }
+    
+      #newsletter .form{
+        width: 100%;
+      }
+}
+  /* END OF CONTACT PAGE */
+  
+

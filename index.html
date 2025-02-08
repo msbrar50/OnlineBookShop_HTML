@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Header</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="slider_style.css">
+
+  <link rel="stylesheet" href="./products/common_product_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+<body>
+   
+  <header>
+
+    <!--search-->
+    <div class="container">
+      <img src="img/logo.png" alt="logo" height="100px" width="200px"  class="logo">
+     
+      
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search by Title, Author or ISBN">
+            <button>Search</button>
+          </div>
+        <div class="user-actions">
+
+
+ 
+            
+            
+            <a href="./login/login_page.html" class="user-icon" >
+                <img src="img/user.png" alt="User Icon" width="24px" height="24px" class="user-img">
+                <img src="img/user_active.png" alt="User Hover Icon" width="24px" height="24px" class="hover-user-img">
+
+                <span class="user-text">Login/Signup</span>
+              </a>
+            
+
+              
+              
+              
+             
+          
+          <a href="./products/cart.html" class="bag-icon">
+              <img src="img/shopping-bag.png" width="24px" height="24px" class="bag-img"></img>
+              <img src="img/bag_active.png" alt="User Hover Icon" width="24px" height="24px" class="hover-bag-img">
+            <span class="cart-count">3</span></a>
+          <a href="#" class="wish-icon">
+              <img src="img/wishlist.png" width="24px" height="24px" class="wish-img"></img>
+              <img src="img/wishlist_black_active.png" width="24px" height="24px" class="hover-wish-img"></img>
+              <span class="wishlist-count">0</span></a>
+
+             
+       
+          <a href="#" class="ham-action"><img src="img/hamburger.png" width="24px" height="24px"></img></a>
+        </div>
+       
+
+     
+    </div>
+
+   
+
+    <!--Nav-->
+    <nav>
+      <div id="menu-bar">
+        <ul>
+          <li><a href="#" class="nav-a">Home</a></li>
+          <li class="dropdown">
+            <a href="./products/product_list.html" class="nav-a">Fiction <i class="arrow down"></i></a>
+                <ul class="dropdown-content">
+                  <li><a href="./products/product_list.html">Action and Adventure</a></li>
+                    <li><a href="./products/product_list.html">Drama</a></li>
+                    <li><a href="./products/product_list.html">Crime</a></li>
+                    <li><a href="./products/product_list.html">Science Fiction</a></li>
+                </ul>
+          </li>
+          <li class="dropdown">
+            <a href="./products/product_list.html" class="nav-a">Non-Fiction <i class="arrow down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="./products/product_list.html">Art and Photography</a></li>
+                    <li><a href="./products/product_list.html">Food and Drink</a></li>
+                    <li><a href="./products/product_list.html">Music</a></li>
+                    <li><a href="./products/product_list.html">Health and Lifestyle</a></li>
+                </ul>
+          </li>
+          <li><a href="#popular-author" class="nav-a" id="author-btn">Popular Authors</a></li>
+          <li><a href="about_us.html" class="nav-a">About Us</a></li>
+          <li><a href="contact_us_page.html" class="nav-a">Contact Us</a></li>
+        </ul></div>
+      </nav>
+
+
+      
+  </header>
+
+
+  <main class="hero-container">
+   
+
+    <div class="slider-main">
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/slider_1.jpg" style="width:100%">
+         </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/slider_2.jpg" style="width:100%">
+         </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/slider_3.jpg" style="width:100%">
+         </div>
+
+         
+      
+         <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+        </div>
+
+
+   <!--new Books-->
+        <section class="best-books">
+            <div class="best-books-title">
+                <h2>New Books</h2>
+                <button class="view-all-btn">View All</button>
+            </div>
+            
+            <div class="books-container">
+
+              <div class="book-card">
+                <span class="badge">New</span><a href="#">
+                  <img src="img/books/book-1.png" alt="Book Cover">
+                </a>
+                <div class="book-info">
+                  <h3>The Art City</h3>
+                  <span class="price">£19.00</span>
+                  <div class="actions">
+                    <a href="#" class="add-to-cart-btn">
+                       Add to bag
+                    </a>
+                    <a href="#" class="add-to-wishlist">
+                      <i class="fa fa-heart"></i> 
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="book-card">
+                <span class="badge">New</span><a href="#">
+                  <img src="img/books/book-2.png" alt="Book Cover">
+                </a>
+                <div class="book-info">
+                  <h3>Give Thanks in Everything Happy</h3>
+                  <span class="price">£5.0</span>
+                  <div class="actions">
+                    <a href="#" class="add-to-cart-btn">
+                        Add to bag
+                     </a>
+                    <a href="#">
+                      <i class="fa fa-heart"></i> 
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="book-card">
+                <span class="badge">New</span> <a href="#">
+                  <img src="img/books/book-3.png" alt="Book Cover">
+                </a>
+                <div class="book-info">
+                  <h3>Your Name</h3>
+                  <span class="price">£8.75</span>
+                  <div class="actions">
+                    <a href="#" class="add-to-cart-btn">
+                        Add to bag
+                     </a>
+                    <a href="#">
+                      <i class="fa fa-heart"></i> 
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="book-card">
+                <span class="badge">New</span><a href="#">
+                  <img src="img/books/book-4.png" alt="Book Cover">
+                </a>
+                <div class="book-info">
+                  <h3>Your Title Goes Here</h3>
+                  <span class="price">$19.99</span>
+                  <div class="actions">
+                    <a href="#" class="add-to-cart-btn">
+                        Add to bag
+                     </a>
+                    <a href="#">
+                      <i class="fa fa-heart"></i> 
+                    </a>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </section>
+
+
+
+          <div class="banner-img"><img src="img/slider_march.jpg" alt=""></div>
+
+
+            <div class="rc-books-title">
+                  <h2>Recommended Books</h2>
+                  <button class="view-all-btn">View All</button>
+              </div>
+          <section class="suggested-books-section">
+            
+             
+           
+            <div class="product-card">
+              <div class="badge">91% likes</div>
+              <div class="product-tumb">
+                <img src="./products/imgs/rb_1.jpg" alt="">
+              </div>
+              <div class="product-details">
+                <span class="product-catagory">Fiction</span>
+                <h4><a href="">She Was the Quiet One</a></h4>
+                 
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>£7.99</small>£4.29</div>
+                  <div class="product-links">
+                    <a href=""><i class="fa fa-heart"></i></a>
+                    <a href=""><i class="fa fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          
+            <div class="product-card">
+              <div class="badge">95% likes</div>
+              <div class="product-tumb">
+                <img src="./products/imgs/rb_2.jpg" alt="">
+              </div>
+              <div class="product-details">
+                <span class="product-catagory">Fiction</span>
+                <h4><a href="">Frost At Christmas</a></h4>
+                 
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>£13.61</small>£10.61</div>
+                  <div class="product-links">
+                    <a href=""><i class="fa fa-heart"></i></a>
+                    <a href=""><i class="fa fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-card">
+              <div class="badge">92% likes</div>
+              <div class="product-tumb">
+                <img src="./products/imgs/rb_3.jpg" alt="">
+              </div>
+              <div class="product-details">
+                <span class="product-catagory">Fiction</span>
+                <h4><a href="">Dear Child</a></h4>
+                 
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>£17.42</small>£10.14</div>
+                  <div class="product-links">
+                    <a href=""><i class="fa fa-heart"></i></a>
+                    <a href=""><i class="fa fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-card">
+              <div class="badge">90% likes</div>
+              <div class="product-tumb">
+                <img src="./products/imgs/rb_4.jpg" alt="">
+              </div>
+              <div class="product-details">
+                <span class="product-catagory">Fiction</span>
+                <h4><a href="">If We Were Villains</a></h4>
+                 
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>£12.61</small>£9.61</div>
+                  <div class="product-links">
+                    <a href=""><i class="fa fa-heart"></i></a>
+                    <a href=""><i class="fa fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </section>
+
+
+
+          <div class="rc-books-title">
+            <h2>Popular Authors</h2>
+            <button class="view-all-btn">View All</button>
+        </div>
+          <section class="author-container" id="popular-author">
+
+         
+              <div class="author-item">
+                <img src="img/authors/roy.jpg" alt="Arundhati Roy" onerror="handleAuthorInvalidImages(this)">
+                <span>Arundhati Roy</span>
+              </div>
+              <div class="author-item">
+                <img src="img/authors/flyin.jpg" alt="Arundhati Roy" onerror="handleAuthorInvalidImages(this)">
+                <span>Gillian Flynn</span>
+              </div>
+              <div class="author-item">
+                <img src="img/authors/john.jpg" alt="Arundhati Roy" onerror="handleAuthorInvalidImages(this)">
+                <span>John Green</span>
+              </div>
+              <div class="author-item">
+                <img src="img/authors/king.jpg" alt="Arundhati Roy" onerror="handleAuthorInvalidImages(this)">
+                <span>Stephen King</span>
+              </div>
+              <div class="author-item">
+                <img src="img/authors/segal.jpg" alt="Arundhati Roy" onerror="handleAuthorInvalidImages(this)">
+                <span>Erich Segal</span>
+              </div>
+               
+             
+            
+
+          </section>
+      
+          
+   </main>
+
+
+   <div class="icon-bar">
+    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="google"><i class="fa fa-instagram"></i></a>
+   
+  </div>
+
+   <!--footer-->
+
+   <footer class="footer">
+    <span class="footer-links">
+      <a href="about_us.html">About Us</a>
+      <a href="contact_us_page.html">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+    </span>
+    <span class="footer-links">
+      <a href="#"><i class="fa fa-facebook-f"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </span>
+    <span class="copyright">&copy; 2024 All Rights Reserved</span>
+  </footer>
+  
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+  
+</body>
+</html>

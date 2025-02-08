@@ -1,0 +1,164 @@
+.suggested-books-section{
+    display: flex;
+    
+	 
+	
+}
+
+.product-card {
+    width: 23%;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 20px auto;
+    background: #fafafa;
+
+   
+
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05); 
+  }
+
+.badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+
+.product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    padding: 20px 0px 20px 0px;
+    background: #f0f0f0;
+}
+
+.product-tumb img {
+    max-width: 100%;
+    height: 100%;
+
+    
+}
+
+.product-details {
+    padding: 10px;
+    
+}
+
+.product-catagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.product-details h4 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+    color: #7C77B7;
+}
+
+ 
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #fbb72c;
+    font-weight: 600;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #7C77B7;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.product-links a:hover {
+    color: #fbb72c;
+}
+
+
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+
+    /* Suggested Books Section */
+    .suggested-books-section {
+      flex-direction: column; 
+      margin: 10px;
+    }
+  
+    /* Product Card */
+    .product-card {
+      width: 100%;
+      margin-top:10px;
+
+     
+      
+      
+    }
+  
+    /* Product Image */
+    .product-tumb {
+        width: 100%;
+      height: 250px; 
+
+      margin: 0%;
+       
+    }
+
+    .product-tumb img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .product-card:hover {
+        transform: scale(0.9); 
+      }
+  }
+  
+  

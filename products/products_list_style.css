@@ -1,0 +1,275 @@
+body {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	
+  }
+
+
+ul.breadcrumb {
+	padding: 10px 16px;
+	list-style: none;
+	background-color: #eee;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+	display: inline;
+	font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+	padding: 8px;
+	color: black;
+	content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+	color: #0275d8;
+	text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+	color: #01447e;
+	text-decoration: underline;
+  }
+
+
+.title-text{
+	text-align: center;
+}
+
+
+.product-list {
+	display: flex;
+	 
+	 
+	margin: 6% auto 0;
+}
+.single-card {
+	position: relative;
+	width: 17%;
+	height: 300px;
+	margin: 15px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+	transition: box-shadow 0.3s ease;
+	overflow: hidden;
+	background: #7c77b7;
+	border-radius: 15px;
+	transition: all 0.8s ease-in-out;
+}
+.single-card:hover {
+	transform: translateY(-10px);
+}
+.img-area {
+	position: relative;
+	width: 100%;
+	height: 75%;
+	overflow: hidden;
+}
+.img-area img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	transition: transform 0.3s ease;
+}
+.img-area:hover img {
+	transform: scale(1.1);
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 174, 255, 0.8);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+.single-card:hover .overlay {
+	opacity: 1;
+}
+.add-to-cart, .view-details, .add-to-wishlist {
+	background-color: #fff;
+	color: #333;
+	padding: 10px 15px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	margin-bottom: 10px;
+}
+.add-to-cart:hover, .view-details:hover, .add-to-wishlist:hover {
+	background-color: #7C77B7;
+	color: #fff;
+	border: none;
+}
+.info {
+	padding: 10px;
+	text-align: center;
+	color: #ddd;
+
+	 
+}
+.info h3 {
+	margin: 15px 0 10px;
+	font-size: 1rem;
+ 
+	text-transform: uppercase;
+	font-family: 'Bebas Neue', sans-serif;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.info .price {
+	margin: 0;
+	font-size: 0.7rem;
+	font-weight: bold;
+	color: aqua;
+}
+
+
+
+ 
+  
+  /* Media queries for responsiveness */
+  @media only screen and (min-width: 768px) {
+	.product-list {
+	  flex-wrap: wrap;  
+	  margin: 0 auto; 
+	}
+  
+	 
+  }
+  
+  @media only screen and (max-width: 768px) {
+	.product-list {
+	  flex-direction: column;  
+	}
+  
+	.single-card {
+	  width: 100%;  
+	  padding: 0;
+	  margin: 10px  0%;
+	  
+	}
+  }
+  
+  @media only screen and (max-width: 480px) {
+	.single-card {
+	  width: 100%;  
+	}
+  
+	.info h3 {
+	  font-size: 0.8rem;  
+	}
+  
+	.info .price {
+	  font-size: 0.6rem;  
+	}
+  }
+
+
+
+  /********** middle section*********************/
+  .card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 20px;
+  }
+
+  .card {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	margin: 10px;
+	text-align: center;
+	line-height: 200px; /* Center text vertically */
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+
+	display: flex; /* Added for vertical centering */
+	align-items: center; /* Added for vertical centering */
+	justify-content: center; 
+  }
+
+  .card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Adjust category colors as desired */
+  .card.crime {
+	background-color: #c0392b;
+	color: #fff;
+	 
+  }
+
+  .card.fiction {
+	background-color: #428bca;
+	color: #fff;
+  }
+
+  .card.thriller {
+	background-color: #f0ad4e;
+	color: #fff;
+  }
+
+  .card.fantasy {
+	background-color: #563473;
+	color: #fff;
+  }
+
+  .card.horror {
+	background-color: #d9534f;
+	color: #fff;
+  }
+
+  .card.romantic {
+	background-color: #e91e63;
+	color: #fff;
+  }
+
+  @media only screen and (max-width: 768px) {
+	.card {
+	  width: 150px;
+	  height: 150px;
+	  font-size: 16px;
+	   
+	}
+  }
+
+  .banner-img-p {
+	width: 100%; /* Banner image takes full width of container */
+	height: auto; /* Image height adjusts based on content */
+  }
+  
+  .banner-img-p img {
+	width: 100%;  
+	height: auto;  
+	object-fit: cover;  
+  }
+
+
+
+ 
+  
+  
+  
+   
+  
+  
+  
